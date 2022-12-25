@@ -2,7 +2,7 @@
   "name": "js411_smallbizapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anastasia103.github.io/JS411_SmallBizApp/",
+  "homepage": "https://anastasia103.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
