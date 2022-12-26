@@ -9,7 +9,7 @@ const listLibraries = ["places"]
 
 export default function Map_Container(props) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDSLT8h0sasqS-2oJ6_Tlvyh5U5DyLWyK0",
+    googleMapsApiKey: process.env.API_KEY,
     libraries: listLibraries
   });
   if (!isLoaded) return <p>Loading...</p>;

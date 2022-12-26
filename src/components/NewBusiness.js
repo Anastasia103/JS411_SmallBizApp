@@ -22,7 +22,7 @@ export default function NewBusiness(props) {
             e.preventDefault()
             const payload = { ...businessDetails}
             payload.id = props.business.length + 1
-            console.log("The Business", payload)
+            console.log(process.env.API_KEY)
             props.addBusiness(payload)
             setBusinessDetails({
             name: "", 
@@ -37,6 +37,7 @@ export default function NewBusiness(props) {
             let businessCategory = e.target.id.split(" ")
             newState[businessCategory[1]] = e.target.value
             setBusinessDetails(newState)
+            console.log(process.env.HELLO)
         }
   return (
     <Box
